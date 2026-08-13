@@ -1,0 +1,334 @@
+/* Coach Raph — page d’accueil complète v18.1
+   Chargée après v16 puis v17.2. Notion reste la source du contenu. */
+
+#page-index.coach-home-page .coach-v18-section{
+  display:block!important;
+  width:100%!important;
+  max-width:none!important;
+  margin:0!important;
+}
+
+/* Correction définitive du manifeste étroit de v17.2. */
+#page-index.coach-home-page .coach-v17-manifesto{
+  width:100%!important;
+  max-width:none!important;
+  grid-template-columns:minmax(0,1.12fr) minmax(350px,.88fr)!important;
+  align-items:center!important;
+  gap:68px!important;
+  margin:30px auto 82px!important;
+  padding:64px 70px!important;
+}
+#page-index.coach-home-page .coach-v17-manifesto h2{max-width:680px!important;font-size:clamp(36px,4vw,56px)!important;line-height:1.04!important}
+#page-index.coach-home-page .coach-v17-manifesto-proofs article{grid-template-columns:52px 1fr!important;gap:16px!important;padding:19px 20px!important;background:rgba(255,255,255,.105)!important;border-color:rgba(255,255,255,.17)!important;border-radius:18px!important}
+#page-index.coach-home-page .coach-v17-proof-icon{width:50px!important;height:50px!important;background:linear-gradient(145deg,#3b8cff,#0c5de5)!important;border-color:rgba(255,255,255,.26)!important;border-radius:15px!important}
+
+#page-index.coach-home-page .coach-v18-section [data-coach-home-section]{display:block!important}
+#page-index.coach-home-page .coach-v18-section .notion-column-list{display:grid!important}
+#page-index.coach-home-page .coach-v18-private-link{display:none!important}
+#page-index.coach-home-page .coach-v18-testimonials-shell-section .coach-v17-testimonials-source,
+#page-index.coach-home-page .coach-v18-testimonials-shell-section .coach-v17-legacy-slider,
+#page-index.coach-home-page .coach-v18-testimonials-shell-section .coach-v18-testimonials-source{display:none!important}
+
+/* L’ordre final est géré par v18 : l’ancien CTA v16 est remplacé par celui de Notion. */
+#page-index.coach-home-page .coach-v18-legacy-cta,
+#page-index.coach-home-page .coach-home-bottom-cta[data-coach-v18-retired=true],
+#page-index.coach-home-page .notion-root>.coach-home-bottom-cta{display:none!important}
+
+/* Offre Découverte */
+#page-index.coach-home-page .coach-v18-offer{
+  position:relative;
+  margin:86px 0 90px!important;
+  padding:68px 70px 64px;
+  overflow:hidden;
+  color:#fff;
+  background:
+    radial-gradient(circle at 92% 7%,rgba(69,161,255,.34),transparent 27%),
+    linear-gradient(135deg,#071938 0%,#082c67 62%,#0756d8 100%);
+  border:1px solid rgba(255,255,255,.12);
+  border-radius:30px;
+  box-shadow:0 26px 58px rgba(5,30,78,.18);
+}
+#page-index.coach-home-page .coach-v18-offer::before{
+  position:absolute;
+  top:-155px;
+  right:-105px;
+  width:380px;
+  height:380px;
+  content:"";
+  border:1px solid rgba(255,255,255,.12);
+  border-radius:50%;
+  box-shadow:0 0 0 58px rgba(255,255,255,.035),0 0 0 116px rgba(255,255,255,.022);
+}
+#page-index.coach-home-page .coach-v18-offer [data-coach-home-heading=discovery]{
+  position:relative;
+  z-index:1;
+  max-width:760px!important;
+  margin:0 0 28px!important;
+  color:#fff!important;
+  font-size:clamp(34px,4vw,53px)!important;
+  line-height:1.06!important;
+  text-align:left!important;
+}
+#page-index.coach-home-page .coach-v18-offer-card{
+  position:relative!important;
+  z-index:1;
+  width:100%!important;
+  max-width:none!important;
+  margin:0 0 42px!important;
+  padding:25px 28px!important;
+  color:#fff!important;
+  background:rgba(255,255,255,.105)!important;
+  border:1px solid rgba(255,255,255,.18)!important;
+  border-radius:18px!important;
+  box-shadow:inset 0 1px rgba(255,255,255,.06)!important;
+  backdrop-filter:blur(8px);
+}
+#page-index.coach-home-page .coach-v18-offer-card .notion-callout__icon{display:none!important}
+#page-index.coach-home-page .coach-v18-offer-card p{color:#e5f0ff!important;font-size:16px!important;line-height:1.6!important}
+#page-index.coach-home-page .coach-v18-offer-card p:first-of-type{margin-bottom:7px!important;color:#fff!important;font-size:23px!important;font-weight:880!important}
+#page-index.coach-home-page .coach-v18-inclusions-title{
+  position:relative;
+  z-index:1;
+  margin:0 0 20px!important;
+  color:#fff!important;
+  font-size:23px!important;
+  font-weight:850!important;
+  text-align:left!important;
+}
+#page-index.coach-home-page .coach-v18-inclusions{
+  position:relative;
+  z-index:1;
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:14px;
+}
+#page-index.coach-home-page .coach-v18-inclusion{
+  display:grid;
+  min-height:142px;
+  grid-template-columns:45px 1fr;
+  gap:14px;
+  align-items:start;
+  padding:20px;
+  background:rgba(255,255,255,.09);
+  border:1px solid rgba(255,255,255,.16);
+  border-radius:17px;
+}
+#page-index.coach-home-page .coach-v18-inclusion-icon{
+  display:grid;
+  width:44px;
+  height:44px;
+  place-items:center;
+  color:#fff;
+  background:linear-gradient(145deg,#3b8cff,#0c5de5);
+  border:1px solid rgba(255,255,255,.26);
+  border-radius:13px;
+}
+#page-index.coach-home-page .coach-v18-inclusion-icon svg{width:24px;height:24px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+#page-index.coach-home-page .coach-v18-inclusion p{margin:2px 0 0!important;color:#eef6ff!important;font-size:13.5px!important;line-height:1.52!important}
+#page-index.coach-home-page .coach-v18-list-source,
+#page-index.coach-home-page .coach-v18-list-source-item{display:none!important}
+#page-index.coach-home-page .coach-v18-delivery-note{
+  position:relative;
+  z-index:1;
+  margin:24px 0 0!important;
+  padding:18px 22px!important;
+  color:#fff!important;
+  background:rgba(2,17,48,.32)!important;
+  border-left:3px solid #5eabff!important;
+  border-radius:0 14px 14px 0!important;
+  font-size:14px!important;
+  line-height:1.55!important;
+}
+
+/* Les programmes précèdent l’offre ; leur design v17 reste conservé. */
+#page-index.coach-home-page .coach-v18-formulas-shell{margin-top:76px!important}
+#page-index.coach-home-page .coach-v18-formulas-shell [data-coach-home-heading=formulas]{margin-top:0!important}
+#page-index.coach-home-page .coach-v17-guidance{grid-template-columns:62px minmax(0,1fr)!important;min-height:128px!important;padding:25px 28px!important;color:#fff!important;background:linear-gradient(115deg,#071d43,#0b55cb)!important;border:0!important;box-shadow:0 16px 36px rgba(6,52,139,.2)!important}
+#page-index.coach-home-page .coach-v17-guidance .notion-callout__content{display:grid!important;min-width:0!important;grid-template-columns:minmax(0,1fr) auto!important;gap:5px 24px!important;align-items:center!important}
+#page-index.coach-home-page .coach-v17-guidance .notion-callout__content>*{opacity:1!important}
+#page-index.coach-home-page .coach-v17-guidance p:first-of-type{grid-column:1!important;grid-row:1!important}
+#page-index.coach-home-page .coach-v17-guidance p:nth-of-type(2){grid-column:1!important;grid-row:2!important;color:#dbe9ff!important;opacity:1!important}
+#page-index.coach-home-page .coach-v17-guidance p:last-of-type{grid-column:2!important;grid-row:1/3!important;margin:0!important}
+#page-index.coach-home-page .coach-v17-guidance p{color:#dbe9ff!important}
+#page-index.coach-home-page .coach-v17-guidance p:first-of-type{color:#fff!important}
+#page-index.coach-home-page .coach-v17-guidance a{white-space:nowrap!important;color:#0755d9!important;background:#fff!important}
+
+/* Parcours détaillé : véritable timeline, distincte des trois étapes de découverte. */
+#page-index.coach-home-page .coach-v18-details{
+  margin:0 0 92px!important;
+  padding:66px 58px 60px;
+  background:linear-gradient(180deg,#f5f9ff,#fff);
+  border:1px solid #d9e5f5;
+  border-radius:28px;
+  box-shadow:0 16px 40px rgba(7,42,104,.07);
+}
+#page-index.coach-home-page .coach-v18-details [data-coach-home-heading=details]{margin:0 0 38px!important}
+#page-index.coach-home-page .coach-v18-timeline{position:relative;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px 22px}
+#page-index.coach-home-page .coach-v18-timeline::before{position:absolute;top:0;bottom:0;left:50%;width:1px;content:"";background:linear-gradient(transparent,#abc9f5 9% 91%,transparent)}
+#page-index.coach-home-page .coach-v18-timeline-step{
+  position:relative;
+  display:grid;
+  min-height:155px;
+  grid-template-columns:58px 1fr;
+  gap:17px;
+  align-items:start;
+  padding:25px 26px;
+  background:#fff;
+  border:1px solid #d8e4f4;
+  border-radius:19px;
+  box-shadow:0 8px 20px rgba(7,42,104,.055);
+}
+#page-index.coach-home-page .coach-v18-step-number{display:grid;width:54px;height:54px;place-items:center;color:#fff;background:linear-gradient(145deg,#2d7dff,#0755dc);border-radius:16px;box-shadow:0 9px 20px rgba(18,100,237,.22);font-size:15px;font-weight:900;letter-spacing:.05em}
+#page-index.coach-home-page .coach-v18-timeline-step h3{margin:2px 0 9px!important;color:#071a42;font-size:17px;font-weight:860;line-height:1.28}
+#page-index.coach-home-page .coach-v18-timeline-step p{margin:0!important;color:#47556d;font-size:13.5px;line-height:1.55}
+#page-index.coach-home-page .coach-v18-details-source{display:none!important}
+
+/* La source Notion reste présente pour l’édition, mais une seule version est visible. */
+#page-index.coach-home-page .coach-v18-details>.coach-v18-details-source,
+#page-index.coach-home-page .coach-v18-offer .coach-v18-list-source,
+#page-index.coach-home-page .coach-v18-testimonials-source{display:none!important}
+
+/* Coach et témoignages : respiration avant la suite commerciale. */
+#page-index.coach-home-page .coach-v18-coach-shell{margin-bottom:74px!important}
+#page-index.coach-home-page .coach-v18-testimonials-shell-section{margin:72px 0 0!important}
+#page-index.coach-home-page .coach-v18-testimonials-shell-section [data-coach-home-heading=testimonials]{margin-top:0!important}
+#page-index.coach-home-page .coach-v18-testimonials-shell-section>.coach-v17-testimonials-shell:not(.coach-v17-legacy-slider){display:block!important}
+
+/* Après les quatre semaines */
+#page-index.coach-home-page .coach-v18-after{
+  margin:0!important;
+  padding:70px 0 0;
+  border-top:1px solid #dce6f3;
+}
+#page-index.coach-home-page .coach-v18-after [data-coach-home-heading=after]{margin:0 0 16px!important}
+#page-index.coach-home-page .coach-v18-after>[data-coach-home-section=after]:not(.notion-column-list):not(.notion-toggle):not(.notion-callout){max-width:880px;margin-right:auto!important;margin-left:auto!important;text-align:center}
+#page-index.coach-home-page .coach-v18-followup-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:16px!important;margin:28px 0 0!important}
+#page-index.coach-home-page .coach-v18-followup-grid+.coach-v18-followup-grid{margin-top:16px!important}
+#page-index.coach-home-page .coach-v18-followup-grid>.notion-column{display:block!important;width:auto!important;margin:0!important}
+#page-index.coach-home-page .coach-v18-followup-card{
+  position:relative!important;
+  min-height:158px!important;
+  padding:28px 28px 25px 92px!important;
+  overflow:hidden;
+  background:#fff!important;
+  border:1px solid #d5e2f2!important;
+  border-radius:20px!important;
+  box-shadow:0 9px 26px rgba(7,42,104,.06)!important;
+}
+#page-index.coach-home-page .coach-v18-followup-card::before{
+  position:absolute;
+  top:27px;
+  left:25px;
+  display:grid;
+  width:48px;
+  height:48px;
+  place-items:center;
+  content:"✓";
+  color:#1264ed;
+  background:#eaf4ff;
+  border-radius:14px;
+  font-size:20px;
+  font-weight:900;
+}
+#page-index.coach-home-page .coach-v18-followup-card[data-coach-v18-plan="2"]::before{content:"↻"}
+#page-index.coach-home-page .coach-v18-followup-card[data-coach-v18-plan="3"]::before{content:"↗"}
+#page-index.coach-home-page .coach-v18-followup-card[data-coach-v18-plan="4"]::before{content:"✦"}
+#page-index.coach-home-page .coach-v18-followup-card .notion-callout__icon{display:none!important}
+#page-index.coach-home-page .coach-v18-followup-card p{color:#48566f!important;font-size:14px!important;line-height:1.55!important}
+#page-index.coach-home-page .coach-v18-followup-card p:first-of-type{margin-bottom:10px!important;color:#071a42!important;font-size:19px!important;font-weight:880!important}
+
+/* Duo et paiement sont volontairement des accordéons. */
+#page-index.coach-home-page .coach-v18-duo,
+#page-index.coach-home-page .coach-v18-payment{
+  display:block!important;
+  width:100%!important;
+  margin:22px 0 0!important;
+  overflow:hidden;
+  background:#fff!important;
+  border:1px solid #d5e2f2!important;
+  border-radius:18px!important;
+  box-shadow:0 8px 22px rgba(7,42,104,.055)!important;
+}
+#page-index.coach-home-page .coach-v18-duo{border-color:#bed7fb!important;background:linear-gradient(105deg,#f2f8ff,#fff)!important}
+#page-index.coach-home-page .coach-v18-duo .notion-toggle__summary,
+#page-index.coach-home-page .coach-v18-payment .notion-toggle__summary,
+#page-index.coach-home-page .coach-v18-duo>summary,
+#page-index.coach-home-page .coach-v18-payment>summary{
+  min-height:68px!important;
+  padding:21px 24px!important;
+  color:#071a42!important;
+  font-size:16px!important;
+  font-weight:850!important;
+  cursor:pointer;
+}
+#page-index.coach-home-page .coach-v18-duo .notion-toggle__content,
+#page-index.coach-home-page .coach-v18-payment .notion-toggle__content,
+#page-index.coach-home-page .coach-v18-duo:not(.notion-toggle) :not(summary),
+#page-index.coach-home-page .coach-v18-payment:not(.notion-toggle) :not(summary){color:#33425e}
+#page-index.coach-home-page .coach-v18-duo .notion-toggle__content,
+#page-index.coach-home-page .coach-v18-payment .notion-toggle__content{padding:0 25px 25px!important}
+#page-index.coach-home-page .coach-v18-duo a,
+#page-index.coach-home-page .coach-v18-payment a{color:#075be6!important;font-weight:800!important}
+
+#page-index.coach-home-page .coach-v18-final-cta{
+  display:block!important;
+  min-height:138px!important;
+  margin:28px 0 0!important;
+  padding:30px 34px!important;
+  color:#fff!important;
+  background:linear-gradient(110deg,#0755dd,#0736a2)!important;
+  border:0!important;
+  border-radius:22px!important;
+  box-shadow:0 18px 36px rgba(5,59,171,.21)!important;
+}
+#page-index.coach-home-page .coach-v18-final-cta .notion-callout__icon{display:none!important}
+#page-index.coach-home-page .coach-v18-final-cta .notion-callout__content{display:grid!important;grid-template-columns:1fr auto;align-items:center;gap:5px 30px}
+#page-index.coach-home-page .coach-v18-final-cta p{color:#dceaff!important;font-size:14px!important;line-height:1.55!important}
+#page-index.coach-home-page .coach-v18-final-cta p:first-of-type{grid-column:1;color:#fff!important;font-size:22px!important;font-weight:880!important}
+#page-index.coach-home-page .coach-v18-final-cta p:nth-of-type(2){grid-column:1}
+#page-index.coach-home-page .coach-v18-final-cta p:last-of-type{grid-column:2;grid-row:1/3;margin:0!important}
+#page-index.coach-home-page .coach-v18-final-cta a{display:inline-flex!important;min-height:49px;align-items:center;padding:0 20px!important;color:#0755dd!important;background:#fff;border-radius:10px;text-decoration:none!important;font-size:13px;font-weight:880!important}
+
+#page-index.coach-home-page .coach-v18-payment{margin-top:34px!important;background:#f8fafc!important;box-shadow:none!important}
+#page-index.coach-home-page .coach-v18-contact{margin:20px 0 0!important;padding:17px 20px!important;background:#f5f8fc;border-left:3px solid #1264ed;border-radius:0 12px 12px 0}
+#page-index.coach-home-page .coach-v18-contact a{color:#075be6!important;font-weight:800!important}
+#page-index.coach-home-page .coach-v18-legal-title{margin:36px 0 12px!important;color:#071a42!important;font-size:18px!important;font-weight:850!important;text-align:left!important}
+#page-index.coach-home-page .coach-v18-legal-links{margin:0 0 20px!important}
+#page-index.coach-home-page .coach-v18-legal-links ul{display:flex;flex-wrap:wrap;gap:10px 22px;margin:0!important;padding:0!important;list-style:none!important}
+#page-index.coach-home-page .coach-v18-legal-links li{margin:0!important;padding:0!important}
+#page-index.coach-home-page .coach-v18-legal-links a{color:#53627b!important;font-size:12.5px!important}
+
+@media(max-width:900px){
+  #page-index.coach-home-page .coach-v18-offer{padding:54px 42px}
+  #page-index.coach-home-page .coach-v18-inclusions{grid-template-columns:repeat(2,minmax(0,1fr))}
+  #page-index.coach-home-page .coach-v18-details{padding:52px 34px}
+}
+
+@media(max-width:720px){
+  #page-index.coach-home-page .coach-v17-manifesto{display:block!important;width:100%!important;max-width:none!important;margin:18px auto 52px!important;padding:34px 24px 26px!important}
+  #page-index.coach-home-page .coach-v18-offer{margin:55px 0 62px!important;padding:38px 20px;border-radius:23px}
+  #page-index.coach-home-page .coach-v18-offer [data-coach-home-heading=discovery]{font-size:31px!important}
+  #page-index.coach-home-page .coach-v18-offer-card{padding:21px!important}
+  #page-index.coach-home-page .coach-v18-offer-card p:first-of-type{font-size:20px!important}
+  #page-index.coach-home-page .coach-v18-inclusions{grid-template-columns:1fr;gap:10px}
+  #page-index.coach-home-page .coach-v18-inclusion{min-height:0;padding:16px}
+  #page-index.coach-home-page .coach-v18-formulas-shell{margin-top:54px!important}
+  #page-index.coach-home-page .coach-v17-guidance{grid-template-columns:46px minmax(0,1fr)!important;padding:20px!important}
+  #page-index.coach-home-page .coach-v17-guidance .notion-callout__content{display:block!important}
+  #page-index.coach-home-page .coach-v17-guidance p:last-of-type{margin-top:14px!important}
+  #page-index.coach-home-page .coach-v17-guidance a{white-space:normal!important;text-align:center}
+  #page-index.coach-home-page .coach-v18-details{margin-bottom:62px!important;padding:38px 18px;border-radius:22px}
+  #page-index.coach-home-page .coach-v18-timeline{grid-template-columns:1fr;gap:11px}
+  #page-index.coach-home-page .coach-v18-timeline::before{display:none}
+  #page-index.coach-home-page .coach-v18-timeline-step{min-height:0;grid-template-columns:48px 1fr;padding:19px 17px}
+  #page-index.coach-home-page .coach-v18-step-number{width:46px;height:46px;border-radius:13px;font-size:13px}
+  #page-index.coach-home-page .coach-v18-followup-grid{grid-template-columns:1fr!important;gap:11px!important}
+  #page-index.coach-home-page .coach-v18-followup-card{min-height:130px!important;padding:23px 18px 21px 78px!important}
+  #page-index.coach-home-page .coach-v18-followup-card::before{top:23px;left:18px;width:44px;height:44px}
+  #page-index.coach-home-page .coach-v18-final-cta{padding:25px 22px!important}
+  #page-index.coach-home-page .coach-v18-final-cta .notion-callout__content{display:block!important}
+  #page-index.coach-home-page .coach-v18-final-cta p:last-of-type{margin-top:17px!important}
+  #page-index.coach-home-page .coach-v18-final-cta a{justify-content:center}
+  #page-index.coach-home-page .coach-v18-legal-links ul{display:block}
+  #page-index.coach-home-page .coach-v18-legal-links li{margin:8px 0!important}
+}
