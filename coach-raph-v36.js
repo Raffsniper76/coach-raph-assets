@@ -242,8 +242,8 @@
 (() => {
   "use strict";
 
-  if (window.__coachRaphHomeV36) return;
-  window.__coachRaphHomeV36 = true;
+  if (window.__coachRaphHomeV361) return;
+  window.__coachRaphHomeV361 = true;
 
   let refreshTimer = 0;
 
@@ -763,19 +763,30 @@
 
   function buildLegalFooter(root) {
     let footer = root.querySelector(".coach-v36-legal");
-    if (footer) return footer;
+    if (footer) footer.remove();
 
     const definitions = [
-      [/^mentions legales$/, "Mentions légales"],
-      [/^conditions generales de vente$/, "Conditions générales de vente"],
-      [/^politique de confidentialite$/, "Politique de confidentialité"]
+      {
+        pattern: /^mentions legales$/,
+        label: "Mentions légales",
+        fallbackHref: "https://coachraph.super.site/3afb88dce9ab814b9d24cd2a30e55440"
+      },
+      {
+        pattern: /^conditions generales de vente$/,
+        label: "Conditions générales de vente",
+        fallbackHref: "https://coachraph.super.site/3afb88dce9ab81f59551cd7526369381"
+      },
+      {
+        pattern: /^politique de confidentialite$/,
+        label: "Politique de confidentialité",
+        fallbackHref: "https://coachraph.super.site/3afb88dce9ab81a49fe6e87bc4917abe"
+      }
     ];
     const sourceLinks = [...root.querySelectorAll("a[href]")];
-    const links = definitions.map(([pattern, label]) => {
+    const links = definitions.map(({ pattern, label, fallbackHref }) => {
       const source = sourceLinks.find((link) => pattern.test(normalize(link.textContent)));
-      return source ? { href: source.href, label } : null;
-    }).filter(Boolean);
-    if (!links.length) return null;
+      return { href: source?.href || fallbackHref, label };
+    });
 
     footer = create("nav", "coach-v36-legal");
     footer.dataset.coachGenerated = "legal-footer";
