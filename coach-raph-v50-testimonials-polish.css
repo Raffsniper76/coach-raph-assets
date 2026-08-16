@@ -1,0 +1,84 @@
+/* Coach Raph — v50 — finition visuelle des témoignages uniquement.
+   Aucun impact sur le JS, l'ordre ou la mécanique du carrousel. */
+
+#page-index.coach-home-page .coach-v17-testimonials-track{
+  align-items:stretch!important;
+}
+
+#page-index.coach-home-page .coach-v17-testimonial-card{
+  min-height:300px!important;
+}
+
+#page-index.coach-home-page .coach-v17-testimonial-content{
+  display:flex;
+  flex-direction:column;
+  align-self:stretch;
+  min-width:0;
+}
+
+/* Les accroches gardent le même rythme, qu'elles tiennent sur 1 ou 2 lignes. */
+#page-index.coach-home-page .coach-v17-testimonial-card h3{
+  min-height:46px;
+  margin-bottom:11px!important;
+}
+
+#page-index.coach-home-page .coach-v17-testimonial-card blockquote{
+  flex:1 1 auto;
+}
+
+/* Signature alignée en bas de chaque carte. */
+#page-index.coach-home-page .coach-v17-testimonial-author{
+  margin-top:auto!important;
+  padding-top:16px;
+  border-top:1px solid #e7eef7;
+}
+
+#page-index.coach-home-page .coach-v17-testimonial-name{
+  font-size:13.5px;
+}
+
+#page-index.coach-home-page .coach-v17-testimonial-context{
+  margin-top:5px;
+  color:#61718a;
+  line-height:1.4;
+}
+
+#page-index.coach-home-page .coach-v17-testimonial-tags{
+  margin-top:8px;
+}
+
+/* Même gabarit pour tous les portraits. Les silhouettes restent clairement symboliques. */
+#page-index.coach-home-page .coach-v17-testimonial-avatar{
+  background:#f4f7fb;
+  outline:1px solid #dce6f2;
+  outline-offset:1px;
+}
+
+#page-index.coach-home-page .coach-v17-testimonial-avatar img[src*="silhouette"]{
+  object-fit:contain!important;
+  box-sizing:border-box;
+  padding:9px;
+  background:#f2f5f9;
+}
+
+#page-index.coach-home-page .coach-v17-testimonial-avatar:has(img[src*="silhouette"]){
+  box-shadow:0 6px 15px rgba(7,26,66,.09);
+}
+
+@media (max-width:720px){
+  #page-index.coach-home-page .coach-v17-testimonial-card{
+    min-height:0!important;
+  }
+
+  #page-index.coach-home-page .coach-v17-testimonial-card h3{
+    min-height:0;
+  }
+
+  #page-index.coach-home-page .coach-v17-testimonial-author{
+    padding-top:14px;
+  }
+
+  #page-index.coach-home-page .coach-v17-testimonial-avatar img[src*="silhouette"]{
+    padding:7px;
+  }
+}
