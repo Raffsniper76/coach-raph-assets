@@ -1,0 +1,465 @@
+/* Coach Raph — v50 / Le vrai défi — patch visuel isolé */
+
+#page-index.coach-home-page .coach-v192-motivation[data-coach-challenge-story="final"]{
+  margin:54px auto 34px;
+  padding:64px 56px 42px;
+}
+
+#page-index.coach-home-page .coach-v50-challenge-heading{
+  max-width:980px;
+  margin:0 auto 36px;
+}
+
+#page-index.coach-home-page .coach-v50-challenge-heading>span{
+  margin-bottom:22px;
+}
+
+#page-index.coach-home-page .coach-v50-challenge-heading h2{
+  display:block;
+  max-width:100%;
+  text-align:center;
+}
+
+#page-index.coach-home-page .coach-v50-challenge-line{
+  display:block;
+}
+
+#page-index.coach-home-page .coach-v50-challenge-line-one{
+  color:#071d49;
+  font-size:clamp(42px,4.5vw,64px);
+  font-weight:950;
+  line-height:1.02;
+  letter-spacing:-.045em;
+}
+
+#page-index.coach-home-page .coach-v50-challenge-line-two{
+  margin-top:15px;
+  color:#071d49;
+  font-size:clamp(25px,2.7vw,38px);
+  font-weight:900;
+  line-height:1.12;
+  letter-spacing:-.035em;
+}
+
+#page-index.coach-home-page .coach-v50-challenge-line-three{
+  margin-top:16px;
+  color:#1764e8;
+  font-size:clamp(40px,4.7vw,66px);
+  font-weight:950;
+  line-height:1.02;
+  letter-spacing:-.05em;
+}
+
+#page-index.coach-home-page .coach-v50-challenge-line-three em{
+  position:relative;
+  display:inline-block;
+  padding-bottom:7px;
+  color:inherit;
+  font-style:normal;
+}
+
+#page-index.coach-home-page .coach-v50-challenge-line-three em::after{
+  position:absolute;
+  right:-3px;
+  bottom:0;
+  left:-3px;
+  height:6px;
+  content:"";
+  background:#1764e8;
+  border-radius:999px;
+  clip-path:polygon(0 46%,100% 0,98% 58%,3% 100%);
+  transform:rotate(-.35deg);
+}
+
+#page-index.coach-home-page .coach-v50-challenge-journey{
+  position:relative;
+  display:grid;
+  width:min(940px,92%);
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:0;
+  margin:0 auto 32px;
+}
+
+#page-index.coach-home-page .coach-v50-challenge-journey::before{
+  position:absolute;
+  top:17px;
+  right:16.5%;
+  left:16.5%;
+  height:2px;
+  content:"";
+  background:repeating-linear-gradient(90deg,#a7c8ff 0 16px,transparent 16px 22px);
+}
+
+#page-index.coach-home-page .coach-v50-challenge-step{
+  position:relative;
+  z-index:1;
+  display:grid;
+  justify-items:center;
+  text-align:center;
+}
+
+#page-index.coach-home-page .coach-v50-challenge-dot{
+  display:block;
+  width:36px;
+  height:36px;
+  margin-bottom:13px;
+  background:#fff;
+  border:2px solid #c9dcff;
+  border-radius:50%;
+  box-shadow:0 4px 12px rgba(23,100,232,.10);
+}
+
+#page-index.coach-home-page .coach-v50-challenge-dot::after{
+  display:block;
+  width:10px;
+  height:10px;
+  margin:11px auto;
+  content:"";
+  background:#fff;
+  border:3px solid #1764e8;
+  border-radius:50%;
+  box-sizing:border-box;
+}
+
+#page-index.coach-home-page .coach-v50-challenge-step.is-active .coach-v50-challenge-dot{
+  background:#eaf2ff;
+  border-color:#d2e2ff;
+}
+
+#page-index.coach-home-page .coach-v50-challenge-step.is-active .coach-v50-challenge-dot::after{
+  width:14px;
+  height:14px;
+  margin:9px auto;
+  background:#1764e8;
+  border:0;
+  box-shadow:0 0 0 7px rgba(23,100,232,.09);
+}
+
+#page-index.coach-home-page .coach-v50-challenge-step strong{
+  display:block;
+  margin:0;
+  color:#071d49;
+  font-size:18px;
+  font-weight:900;
+  line-height:1.2;
+}
+
+#page-index.coach-home-page .coach-v50-challenge-step small{
+  display:block;
+  margin-top:6px;
+  color:#60708a;
+  font-size:13px;
+  font-weight:500;
+  line-height:1.3;
+}
+
+#page-index.coach-home-page .coach-v192-stat-grid.coach-v50-challenge-stats{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  align-items:stretch;
+  gap:18px;
+  padding:0;
+}
+
+#page-index.coach-home-page .coach-v192-stat-grid.coach-v50-challenge-stats::before,
+#page-index.coach-home-page .coach-v192-stat-grid.coach-v50-challenge-stats::after{
+  display:none;
+}
+
+#page-index.coach-home-page .coach-v50-challenge-stat,
+#page-index.coach-home-page .coach-v50-challenge-stat:nth-child(1),
+#page-index.coach-home-page .coach-v50-challenge-stat:nth-child(2),
+#page-index.coach-home-page .coach-v50-challenge-stat:nth-child(3){
+  display:grid;
+  min-height:188px;
+  grid-template-columns:54px minmax(0,1fr);
+  grid-template-rows:auto 1fr;
+  gap:14px 16px;
+  align-content:center;
+  padding:24px 24px 22px;
+  background:linear-gradient(145deg,#fff 58%,var(--stat-soft));
+  border:1px solid color-mix(in srgb,var(--stat-color) 22%,#d9e4f4);
+  border-radius:19px;
+  box-shadow:0 13px 30px rgba(8,28,59,.075);
+  transform:none!important;
+}
+
+#page-index.coach-home-page .coach-v50-challenge-stat:hover,
+#page-index.coach-home-page .coach-v50-challenge-stat:nth-child(1):hover,
+#page-index.coach-home-page .coach-v50-challenge-stat:nth-child(2):hover,
+#page-index.coach-home-page .coach-v50-challenge-stat:nth-child(3):hover{
+  border-color:color-mix(in srgb,var(--stat-color) 37%,#d9e4f4);
+  box-shadow:0 17px 34px rgba(8,28,59,.10);
+  transform:translateY(-3px)!important;
+}
+
+#page-index.coach-home-page .coach-v50-challenge-stat::before{
+  top:0;
+  left:25px;
+  width:58px;
+  height:4px;
+}
+
+#page-index.coach-home-page .coach-v50-challenge-stat::after{
+  right:-48px;
+  bottom:-60px;
+  width:145px;
+  height:145px;
+  opacity:.85;
+}
+
+#page-index.coach-home-page .coach-v50-stat-icon{
+  position:relative;
+  z-index:1;
+  display:grid;
+  width:54px;
+  height:54px;
+  grid-row:1/3;
+  place-items:center;
+  align-self:start;
+  color:var(--stat-color);
+  background:var(--stat-soft);
+  border-radius:15px;
+}
+
+#page-index.coach-home-page .coach-v50-stat-icon svg{
+  width:28px;
+  height:28px;
+  fill:none;
+  stroke:currentColor;
+  stroke-width:1.8;
+  stroke-linecap:round;
+  stroke-linejoin:round;
+}
+
+#page-index.coach-home-page .coach-v50-challenge-stat>strong{
+  position:relative;
+  z-index:1;
+  display:flex;
+  flex-wrap:wrap;
+  align-items:baseline;
+  gap:5px 8px;
+  margin:0!important;
+  color:var(--stat-color)!important;
+  font-size:inherit!important;
+  line-height:1!important;
+  letter-spacing:0!important;
+}
+
+#page-index.coach-home-page .coach-v50-challenge-stat>strong>span{
+  font-size:42px;
+  font-weight:950;
+  letter-spacing:-.055em;
+}
+
+#page-index.coach-home-page .coach-v50-challenge-stat>strong>span em{
+  margin-left:2px;
+  font-size:.58em;
+  font-style:normal;
+  letter-spacing:-.03em;
+}
+
+#page-index.coach-home-page .coach-v50-challenge-stat>strong>small{
+  margin:0;
+  color:var(--stat-color);
+  font-size:20px;
+  font-weight:900;
+  line-height:1.02;
+  letter-spacing:-.03em;
+}
+
+#page-index.coach-home-page .coach-v50-challenge-stat>p{
+  position:relative;
+  z-index:1;
+  grid-column:2;
+  align-self:start;
+  margin:0!important;
+  color:#233a60!important;
+  font-size:15px!important;
+  font-weight:560!important;
+  line-height:1.4!important;
+}
+
+#page-index.coach-home-page .coach-v50-challenge-sources{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap:4px 7px;
+  margin:18px auto 0;
+  color:#738198;
+  font-size:12.5px;
+  line-height:1.45;
+  text-align:center;
+}
+
+#page-index.coach-home-page .coach-v50-challenge-sources>strong{
+  color:#687790;
+  font-weight:800;
+}
+
+#page-index.coach-home-page .coach-v50-challenge-sources>div{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap:4px 7px;
+}
+
+#page-index.coach-home-page .coach-v50-challenge-sources a{
+  color:#60708a!important;
+  text-decoration:underline!important;
+  text-decoration-thickness:1px!important;
+  text-underline-offset:3px!important;
+}
+
+#page-index.coach-home-page .coach-v50-source-separator{
+  color:#a0acc0;
+}
+
+@media (max-width:920px){
+  #page-index.coach-home-page .coach-v192-motivation[data-coach-challenge-story="final"]{
+    margin:50px auto 34px;
+    padding:54px 32px 38px;
+  }
+
+  #page-index.coach-home-page .coach-v50-challenge-journey{
+    width:100%;
+  }
+
+  #page-index.coach-home-page .coach-v192-stat-grid.coach-v50-challenge-stats{
+    grid-template-columns:repeat(2,minmax(0,1fr));
+  }
+
+  #page-index.coach-home-page .coach-v50-challenge-stat:nth-child(3){
+    grid-column:1/-1;
+    width:calc(50% - 9px);
+    justify-self:center;
+  }
+}
+
+@media (max-width:660px){
+  #page-index.coach-home-page .coach-v192-motivation[data-coach-challenge-story="final"]{
+    width:calc(100% - 28px);
+    margin:40px auto 24px;
+    padding:42px 18px 30px;
+    border-radius:25px;
+  }
+
+  #page-index.coach-home-page .coach-v50-challenge-heading{
+    margin-bottom:30px;
+  }
+
+  #page-index.coach-home-page .coach-v50-challenge-heading>span{
+    margin-bottom:17px;
+  }
+
+  #page-index.coach-home-page .coach-v50-challenge-line-one{
+    font-size:36px;
+  }
+
+  #page-index.coach-home-page .coach-v50-challenge-line-two{
+    margin-top:11px;
+    font-size:23px;
+    line-height:1.16;
+  }
+
+  #page-index.coach-home-page .coach-v50-challenge-line-three{
+    margin-top:13px;
+    font-size:37px;
+  }
+
+  #page-index.coach-home-page .coach-v50-challenge-line-three em{
+    padding-bottom:5px;
+  }
+
+  #page-index.coach-home-page .coach-v50-challenge-line-three em::after{
+    height:4px;
+  }
+
+  #page-index.coach-home-page .coach-v50-challenge-journey{
+    grid-template-columns:1fr;
+    gap:16px;
+    margin:0 auto 24px;
+  }
+
+  #page-index.coach-home-page .coach-v50-challenge-journey::before{
+    top:17px;
+    bottom:17px;
+    left:17px;
+    width:2px;
+    height:auto;
+    background:repeating-linear-gradient(180deg,#a7c8ff 0 14px,transparent 14px 20px);
+  }
+
+  #page-index.coach-home-page .coach-v50-challenge-step{
+    grid-template-columns:36px minmax(0,1fr);
+    gap:13px;
+    align-items:center;
+    justify-items:stretch;
+    text-align:left;
+  }
+
+  #page-index.coach-home-page .coach-v50-challenge-dot{
+    margin:0;
+  }
+
+  #page-index.coach-home-page .coach-v50-challenge-step strong{
+    font-size:16px;
+  }
+
+  #page-index.coach-home-page .coach-v50-challenge-step small{
+    margin-top:3px;
+    font-size:12px;
+  }
+
+  #page-index.coach-home-page .coach-v192-stat-grid.coach-v50-challenge-stats{
+    grid-template-columns:1fr;
+    gap:12px;
+  }
+
+  #page-index.coach-home-page .coach-v50-challenge-stat,
+  #page-index.coach-home-page .coach-v50-challenge-stat:nth-child(1),
+  #page-index.coach-home-page .coach-v50-challenge-stat:nth-child(2),
+  #page-index.coach-home-page .coach-v50-challenge-stat:nth-child(3){
+    grid-column:auto;
+    width:100%;
+    min-height:150px;
+    grid-template-columns:48px minmax(0,1fr);
+    gap:11px 14px;
+    padding:20px 18px;
+  }
+
+  #page-index.coach-home-page .coach-v50-stat-icon{
+    width:48px;
+    height:48px;
+    border-radius:13px;
+  }
+
+  #page-index.coach-home-page .coach-v50-stat-icon svg{
+    width:25px;
+    height:25px;
+  }
+
+  #page-index.coach-home-page .coach-v50-challenge-stat>strong>span{
+    font-size:36px;
+  }
+
+  #page-index.coach-home-page .coach-v50-challenge-stat>strong>small{
+    font-size:18px;
+  }
+
+  #page-index.coach-home-page .coach-v50-challenge-stat>p{
+    font-size:14px!important;
+  }
+
+  #page-index.coach-home-page .coach-v50-challenge-sources{
+    display:block;
+    margin-top:18px;
+    font-size:11.5px;
+    text-align:left;
+  }
+
+  #page-index.coach-home-page .coach-v50-challenge-sources>div{
+    justify-content:flex-start;
+    margin-top:4px;
+  }
+}
